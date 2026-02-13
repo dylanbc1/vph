@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  height: 100%;
+  min-height: 100dvh;
+}
+
+body {
+  @apply bg-wpp-bg text-wpp-text antialiased;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  overscroll-behavior: none;
+  min-height: 100dvh;
+  height: 100%;
+}
+
+#root {
+  min-height: 100dvh;
+  height: 100%;
+}
+
+/* Safe area para notch en móvil */
+.safe-top {
+  padding-top: env(safe-area-inset-top, 0);
+}
+.safe-bottom {
+  padding-bottom: env(safe-area-inset-bottom, 0);
+}
