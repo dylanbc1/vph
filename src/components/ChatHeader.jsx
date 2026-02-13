@@ -15,7 +15,7 @@ export default function ChatHeader() {
           Control VPH 🚨
         </h1>
         <p className="truncate text-xs text-wpp-muted">
-          6 participantes
+          7 participantes
         </p>
       </div>
       <div className="flex shrink-0 gap-1">
